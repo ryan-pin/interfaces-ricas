@@ -26,8 +26,12 @@ function concatenaStringsComJoin(strings: string[]): string {
 
 // Ordena strings em ordem decrescente
 function ordenaStringDecrescente(strings: string[]): string[] {
-
   return strings.sort((a: string, b: string) => b.localeCompare(a));
+}
+
+// Pega os dois primeiros elementos usando slice
+function pegaDoisPrimeiros<T>(array: T[]): T[] {
+  return array.slice(0, 2);
 }
 
 function main() {
@@ -38,23 +42,30 @@ function main() {
   //   console.log("Quadrados (forEach):", calculaQuadradoForEach(testArray));
 
   // Concatena strings
-//   const testArrayStrings = ["Arrays", "com", "TypeScript"];
+  //   const testArrayStrings = ["Arrays", "com", "TypeScript"];
 
-//   console.log("Array original:", testArrayStrings);
-//   console.log(
-//     "Concatenação com join:",
-//     concatenaStringsComJoin(testArrayStrings)
-//   );
+  //   console.log("Array original:", testArrayStrings);
+  //   console.log(
+  //     "Concatenação com join:",
+  //     concatenaStringsComJoin(testArrayStrings)
+  //   );
 
   // Ordena strings em ordem decrescente
-  const testArrayOrdenacao = ["carro", "boneco", "ave", "lapis"];
+//   const testArrayOrdenacao = ["carro", "boneco", "ave", "lapis"];
 
-  console.log("\n--- Ordenação Decrescente ---");
-  console.log("Array original:", testArrayOrdenacao);
-  console.log(
-    "Array ordenado decrescente:",
-    ordenaStringDecrescente(testArrayOrdenacao)
-  );
+//   console.log("\n--- Ordenação Decrescente ---");
+//   console.log("Array original:", testArrayOrdenacao);
+//   console.log(
+//     "Array ordenado decrescente:",
+//     ordenaStringDecrescente(testArrayOrdenacao)
+//   );
+
+  // Pega os dois primeiros elementos com slice
+  const testArraySlice = [2, 4, 6, 2, 8, 9, 5];
+
+  console.log("\n--- Slice - Dois Primeiros Elementos ---");
+  console.log("Array original:", testArraySlice);
+  console.log("Dois primeiros elementos:", pegaDoisPrimeiros(testArraySlice));
 }
 
 // Executar se o arquivo for chamado diretamente
