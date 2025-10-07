@@ -5,8 +5,7 @@
   "main": "array-squares.js",
   "scripts": {
     "build": "tsc",
-    "dev": "ts-node array-squares.ts",
-    "test": "ts-node test.ts"
+    "dev": "ts-node array-squares.ts"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
