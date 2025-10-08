@@ -34,6 +34,11 @@ function pegaDoisPrimeiros<T>(array: T[]): T[] {
   return array.slice(0, 2);
 }
 
+// Filtra elementos pares usando filter com arrow function
+function filtraElementosPares(numbers: number[]): number[] {
+  return numbers.filter((numero) => numero % 2 === 0);
+}
+
 function main() {
   //   const testArray = [3, 5, 7, 3, 8, 9, 1];
 
@@ -51,21 +56,25 @@ function main() {
   //   );
 
   // Ordena strings em ordem decrescente
-//   const testArrayOrdenacao = ["carro", "boneco", "ave", "lapis"];
+  //   const testArrayOrdenacao = ["carro", "boneco", "ave", "lapis"];
 
-//   console.log("\n--- Ordenação Decrescente ---");
-//   console.log("Array original:", testArrayOrdenacao);
-//   console.log(
-//     "Array ordenado decrescente:",
-//     ordenaStringDecrescente(testArrayOrdenacao)
-//   );
+  //   console.log("Array original:", testArrayOrdenacao);
+  //   console.log(
+  //     "Array ordenado decrescente:",
+  //     ordenaStringDecrescente(testArrayOrdenacao)
+  //   );
 
   // Pega os dois primeiros elementos com slice
   const testArraySlice = [2, 4, 6, 2, 8, 9, 5];
 
-  console.log("\n--- Slice - Dois Primeiros Elementos ---");
   console.log("Array original:", testArraySlice);
   console.log("Dois primeiros elementos:", pegaDoisPrimeiros(testArraySlice));
+
+  // Filtra elementos pares com filter
+  const testArrayPares = [8, 3, 9, 5, 6, 12];
+
+  console.log("Array original:", testArrayPares);
+  console.log("Elementos pares:", filtraElementosPares(testArrayPares));
 }
 
 // Executar se o arquivo for chamado diretamente

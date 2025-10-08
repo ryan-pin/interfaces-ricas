@@ -2,10 +2,10 @@
   "name": "interfaces-ricas",
   "version": "1.0.0",
   "description": "Programa TypeScript para calcular quadrados de elementos em arrays",
-  "main": "array-squares.js",
+  "main": "funcoes.js",
   "scripts": {
     "build": "tsc",
-    "dev": "ts-node array-squares.ts"
+    "dev": "ts-node funcoes.ts"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
