@@ -1,5 +1,5 @@
 // Calcula quadrado com arrays
-function calculaQuadrado(numbers: number[]): number[] {
+export function calculaQuadrado(numbers: number[]): number[] {
   const squares: number[] = [];
 
   for (let i = 0; i < numbers.length; i++) {
@@ -9,7 +9,7 @@ function calculaQuadrado(numbers: number[]): number[] {
   return squares;
 }
 
-function calculaQuadradoForEach(numbers: number[]): number[] {
+export function calculaQuadradoForEach(numbers: number[]): number[] {
   const squares: number[] = [];
 
   numbers.forEach((number, index) => {
@@ -20,22 +20,22 @@ function calculaQuadradoForEach(numbers: number[]): number[] {
 }
 
 // Concatena strings
-function concatenaStringsComJoin(strings: string[]): string {
+export function concatenaStringsComJoin(strings: string[]): string {
   return strings.join(" ");
 }
 
 // Ordena strings em ordem decrescente
-function ordenaStringDecrescente(strings: string[]): string[] {
+export function ordenaStringDecrescente(strings: string[]): string[] {
   return strings.sort((a: string, b: string) => b.localeCompare(a));
 }
 
 // Pega os dois primeiros elementos usando slice
-function pegaDoisPrimeiros<T>(array: T[]): T[] {
+export function pegaDoisPrimeiros<T>(array: T[]): T[] {
   return array.slice(0, 2);
 }
 
 // Filtra elementos pares usando filter com arrow function
-function filtraElementosPares(numbers: number[]): number[] {
+export function filtraElementosPares(numbers: number[]): number[] {
   return numbers.filter((numero) => numero % 2 === 0);
 }
 
